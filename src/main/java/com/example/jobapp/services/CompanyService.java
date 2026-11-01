@@ -20,7 +20,7 @@ public class CompanyService implements ICompanyService{
 
     @Override
     public boolean companyExists(String companyName) {
-        return companyRepository.findByCompanyNameIgnoreCase(companyName) != null;
+        return companyRepository.findByNameIgnoreCase(companyName) != null;
     }
 
     @Override
